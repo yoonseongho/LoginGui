@@ -11,9 +11,9 @@ public class DBConnection {
             Class.forName("com.mysql.cj.jdbc.Driver");
             /* 데이터베이스 접속 */
             conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/Login?serverTimezone=Asia/Seoul",
-                    "fourjo",
-                    "1234");
+                    "",
+                    "",
+                    "");
             Access access = new Access();
 
         } catch (ClassNotFoundException e) {
