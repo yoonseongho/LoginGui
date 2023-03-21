@@ -9,16 +9,14 @@ public class Login extends JFrame {
 
     Login() {
         super("Login_Client");
-        setSize(458, 255);
+        setSize(500, 255);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
-        JButton btn1 = new JButton("로그인");
-        JButton btn2 = new JButton("회원가입");
-        JButton btn3 = new JButton("비밀번호 찾기");
-        btn1.setBounds(100, 140, 122, 30);
-        btn2.setBounds(250, 140, 122, 30);
-        btn3.setBounds(178, 180, 120, 28);
+        JButton btn1 = new JButton("주인님 어서오세요❤❤❤");
+        JButton btn2 = new JButton("주인님이 되실래요?❤");
+        btn1.setBounds(50, 140, 180, 30);
+        btn2.setBounds(280, 140, 180, 30);
 
         l2 = new JLabel("ID :");
         l2.setBounds(145, 50, 80, 30);
@@ -34,7 +32,6 @@ public class Login extends JFrame {
 
         getContentPane().add(btn1);
         getContentPane().add(btn2);
-        getContentPane().add(btn3);
         getContentPane().add(l2);
         getContentPane().add(tf1);
         getContentPane().add(l3);
@@ -74,15 +71,6 @@ public class Login extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 setVisible(false);
                 new Register();
-            }
-        });
-
-        /* 비밀번호 찾기 버튼 */
-        btn3.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                setVisible(false);
-                 new FindPassword();
             }
         });
     }

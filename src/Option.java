@@ -38,7 +38,7 @@ public class Option extends JFrame {
         btn3.setBounds(126, 157, 200, 40);
 
         /* 환영 메시지 띄우기 */
-        name = new JLabel(user.getName() + "님 환영합니다.");
+        name = new JLabel("어서오세요 " + user.getName() + " 주인님 ❤❤");
         name.setBounds(170, 5, 200, 40);
 
         /* 프레임에다가 버튼 추가 */
