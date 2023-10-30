@@ -55,7 +55,7 @@ public class Login extends JFrame {
 
                 if ( result == 1) {
                     User user = access.select(id);
-                    JOptionPane.showMessageDialog(null, "로그인 성공", "로그인 확인", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "로그인 성공", "로그인 확인", JOptionPane.INFORMATION_MESSAGE);
                     setVisible(false);
                     new Option(user);
                     return;

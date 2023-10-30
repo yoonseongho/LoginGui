@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Maid.iml" filepath="$PROJECT_DIR$/Maid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LoginGui.iml" filepath="$PROJECT_DIR$/LoginGui.iml" />
     </modules>
   </component>
 </project>

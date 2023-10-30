@@ -50,7 +50,7 @@ public class ChangePassword extends JFrame {
                     access.passwordUpdate(userId, user.getPassword());
                     setVisible(false);
                     new Login();
-                    JOptionPane.showMessageDialog(null, "수정되었습니다.", "Success", JOptionPane.DEFAULT_OPTION);
+                    JOptionPane.showMessageDialog(null, "수정되었습니다.", "Success", JOptionPane.INFORMATION_MESSAGE);
                 }
             }
         });

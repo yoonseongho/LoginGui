@@ -12,7 +12,7 @@ public class DBConnection {
             /* 데이터베이스 접속 */
             conn = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/Login?serverTimezone=Asia/Seoul",
-                    "fivejo",
+                    "root",
                     "1234");
             Access access = new Access();
 
@@ -20,6 +20,8 @@ public class DBConnection {
             e.printStackTrace();
         } catch (SQLException e2) {
             e2.getMessage();
+        } catch (Exception e) {
+            e.printStackTrace();
         } finally {
             if (conn != null) {
                 System.out.println("데이터베이스 접속");

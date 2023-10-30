@@ -81,7 +81,7 @@ public class Update extends JFrame {
                     access.update(user);
                     setVisible(false);
                     new Login();
-                    JOptionPane.showMessageDialog(null, "수정되었습니다.", "update", JOptionPane.DEFAULT_OPTION);
+                    JOptionPane.showMessageDialog(null, "수정되었습니다.", "update", JOptionPane.INFORMATION_MESSAGE);
                 }
                 access.close();
             }

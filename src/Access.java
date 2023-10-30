@@ -14,8 +14,8 @@ public class Access {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             conn = getConnection(
-                    "jdbc:mysql://localhost:3306/Login?serverTimezone=Asia/Seoul",
-                    "fivejo",
+                    "jdbc:mysql://localhost:3306/login?serverTimezone=Asia/Seoul",
+                    "root",
                     "1234"
             );
         } catch (ClassNotFoundException e) {

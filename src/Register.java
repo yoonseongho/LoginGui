@@ -69,10 +69,10 @@ public class Register extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (tf1.getText().trim().equals("") || pf1.getText().trim().equals("") || name1.getText().trim().equals("")) {
-                    JOptionPane.showMessageDialog(null, "아이디 또는 비밀번호 또는 이름을 입력 하셔야 됩니다.", "아이디,비번,이름을 입력", JOptionPane.DEFAULT_OPTION);
+                    JOptionPane.showMessageDialog(null, "아이디 또는 비밀번호 또는 이름을 입력 하셔야 됩니다.", "아이디,비번,이름을 입력", JOptionPane.ERROR_MESSAGE);
                     return;
                 } else if(USE == 0){
-                    JOptionPane.showMessageDialog(null, "중복확인을 해주세요", "중복체크", JOptionPane.DEFAULT_OPTION);
+                    JOptionPane.showMessageDialog(null, "중복확인을 해주세요", "중복체크", JOptionPane.ERROR_MESSAGE);
                 } else {
                     Access access = new Access();
 
@@ -112,7 +112,7 @@ public class Register extends JFrame {
                     user = access.select(userId);
                     if (user == null) {
                         USE = 1;
-                        JOptionPane.showMessageDialog(null, "사용하실수 있는 아이디입니다.", "Success", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "사용하실수 있는 아이디입니다.", "Success", JOptionPane.INFORMATION_MESSAGE);
                     } else {
                         USE = 0;
                         JOptionPane.showMessageDialog(null, user.getName() + "님이 가입되어 있습니다.", "Error", JOptionPane.ERROR_MESSAGE);
