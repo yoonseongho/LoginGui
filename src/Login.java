@@ -13,8 +13,8 @@ public class Login extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
-        JButton btn1 = new JButton("주인님 어서오세요❤❤❤");
-        JButton btn2 = new JButton("주인님이 되실래요?❤");
+        JButton btn1 = new JButton("로그인");
+        JButton btn2 = new JButton("회원가입");
         btn1.setBounds(50, 140, 180, 30);
         btn2.setBounds(280, 140, 180, 30);
 
